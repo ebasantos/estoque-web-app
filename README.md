@@ -5,9 +5,9 @@ Aplicação desenvolvida como projeto para a matéria de Analise e Projeto de Si
 
 ### Equipe
 
-[Pedro Barbiero]github.com/pedrobarbiero
+[Pedro Barbiero](https://github.com/pedrobarbiero)
 
-[Meyr Fernando]github.com/Fr4nT1c86
+[Meyr Fernando](https://github.com/Fr4nT1c86)
 
 ### Banco de dados
 
