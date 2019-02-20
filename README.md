@@ -1,6 +1,8 @@
-# Self-Stock
+# Self-Stock 
+![alt text](https://raw.githubusercontent.com/ebasantos/estoque-web-app-front-end/master/src/img/logo.jpg)
 ```
 Aplicação desenvolvida como projeto para a matéria de Analise e Projeto de Sistemas II, UFMT 
+
 ```
 
 ### Equipe
