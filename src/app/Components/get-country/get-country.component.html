@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table col">
+      <thead class="thead-dark"> 
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Código</th>
+          <th scope="col">Pais</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let country of country">
+        <tr>
+          <th scope="row">*</th>
+          <td>{{country.id}}</td>
+          <td>{{country.nome}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+        <a class="btn btn-success btn-lg" href="newcountry" role="button">Novo</a>
+     </div> 
+</div>
