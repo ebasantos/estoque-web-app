@@ -1,19 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from "@angular/forms";
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppFrontModule } from './app-front-end-module';
+import { GetCountryComponent } from './Components/get-country/get-country.component';
+import { PostContryComponent } from './Components/post-contry/post-contry.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GetCountryComponent,
+    PostContryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppFrontModule
+    AppFrontModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

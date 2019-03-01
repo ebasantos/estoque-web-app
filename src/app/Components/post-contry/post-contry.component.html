@@ -1,0 +1,19 @@
+<div id="postback" class="jumbotron container">
+    <div class="container">
+      <h1  class="display text-bold">Cadastro de Pais</h1>
+      <p class="lead">Interface destinada para o cadastro de pais.</p>
+    </div>
+  </div>
+<div >
+  <div id="postback" class="container">  
+    <form class="row justify-content-md-center" #country="ngForm" (ngSubmit)="onSubmit(country)">
+        <div class="form-group col col-lg-4">
+          <label class="font-weight-bold">Nome</label>
+          <input  class="form-control" name="nome"  ngModel >
+        </div>  
+    </form>
+    <div class="row justify-content-md-center">
+        <button class="btn btn-success btn-lg" type="onSubmit(country)">Submit</button>      
+    </div> 
+  </div>
+</div>
