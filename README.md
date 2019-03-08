@@ -1,5 +1,9 @@
-# Self-Stock 
-![alt text](https://raw.githubusercontent.com/ebasantos/estoque-web-app-front-end/master/src/img/logo.jpg)
+# Self-Stock
+```Sistema de estoque!```
+
+![alt text](https://raw.githubusercontent.com/ebasantos/estoque-web-app-front-end/master/src/img/icons8-sell-stock-96.png "Controle seu Estoque")
+
+
 ```
 Aplicação desenvolvida como projeto para a matéria de Analise e Projeto de Sistemas II, UFMT 
 
