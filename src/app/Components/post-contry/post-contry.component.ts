@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, Input } from '@angular/core';
 import { CountryService } from 'src/app/services/country.service';
+import { Pais } from 'src/app/classes/pais';
+import { HttpClient } from '@angular/common/http';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-post-contry',
@@ -8,16 +10,16 @@ import { CountryService } from 'src/app/services/country.service';
   styleUrls: ['./post-contry.component.css']
 })
 export class PostContryComponent{
-  http: HttpClient;
 
-  constructor(private s: CountryService){}
+  constructor(private http: HttpClient, private s: CountryService){}
     
-  onSubmit(country){
-       this.s.save(country.value)
-       alert('Usuario cadastrado com sucesso');
-    }
 
-    newCountry(){
-      location.href="/newcountry"
+  onSubmit(pais){
+        this.s.save(pais.value);
+        this.newCountry();
+  }
+
+    newCountry(){ ;
+      location.href="/pais"
     }
 }

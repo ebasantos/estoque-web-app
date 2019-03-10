@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -6,4 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+ @Input() busca: string = 'teste';
+
+ getThis(){}
+
 }

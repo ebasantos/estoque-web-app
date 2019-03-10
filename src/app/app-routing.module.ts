@@ -7,7 +7,7 @@ import { PostContryComponent } from './Components/post-contry/post-contry.compon
 
 const routes: Routes =[
   {path: 'newcountry', component : PostContryComponent},
- /// {path: 'user', component : UsersGetComponent},
+  {path: 'pais/:id', component : GetCountryComponent},
   {path: 'pais', component : GetCountryComponent},
   {path: '', component : HomeComponent}
  //// {path: '**', component : NotFoundPageComponent}

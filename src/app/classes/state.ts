@@ -1,6 +1,6 @@
-import { Country } from './country';
+import { Pais } from './pais';
 
 export class State {
     nome: String;
-    pais: Country;
+    pais: Pais;
 }

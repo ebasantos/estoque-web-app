@@ -1,7 +1,7 @@
-import { Country } from './country';
+import { Pais } from './pais';
 
 describe('Country', () => {
   it('should create an instance', () => {
-    expect(new Country()).toBeTruthy();
+    expect(new Pais()).toBeTruthy();
   });
 });
