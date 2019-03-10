@@ -1,21 +1,48 @@
-<div class="container">
-    <table class="table col">
-      <thead class="thead-dark"> 
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Código</th>
-          <th scope="col">Pais</th>
-        </tr>
-      </thead>
-      <tbody *ngFor="let country of country">
-        <tr>
-          <th scope="row">*</th>
-          <td>{{country.id}}</td>
-          <td>{{country.nome}}</td>
-        </tr>
-      </tbody>
-    </table>
-    <div>
-        <a class="btn btn-success btn-lg" href="newcountry" role="button">Novo</a>
-     </div> 
+<div id="">
+  <div class="container col-md-6 " id="postback">
+      <table class="table table-sm table-hover col">
+        <thead class="bg-dark text-light"> 
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Código</th>
+            <th scope="col-md-8">Pais</th>
+            <th scope="col-md-2"></th>
+            <th scope="col-md-2"></th>
+          </tr>
+        </thead>
+        <tbody  class="text-dark font-weight-bold " *ngFor="let country of page.entries; let page of page ">
+          <tr>
+            <th scope="row" ></th>
+            <td >{{country.id}}</td>
+            <td >{{country.nome}}</td>
+            <td >  
+              <a class="btn btn-success " href="post/:id" role="button">Editar</a>  
+            </td>
+            <td>
+                <button class="btn btn-success " (click)="delete(country.id)">Apagar</button>
+            </td> 
+          </tr>
+        </tbody>
+      </table>
+      <div class="col-4" >
+        <p>Pagine {{page.page_number}} de: {{page.total_pages}}</p>
+      </div>
+      <nav aria-label="">
+        <ul class="pagination justify-content-center">
+          <li>
+            <button class="page-link"  (click)="find(pagenumber=pagenumber-1)">Anterior</button>
+          </li>
+          <li class="page-item"><button class="page-link" (click)="find(pagenumber=1)">1</button></li>
+          <li class="page-item"><button class="page-link" (click)="find(pagenumber=2)">2</button></li>
+          <li class="page-item"><button class="page-link" (click)="find(pagenumber=3)">3</button></li>
+          <li class="page-item">
+            <button class="page-link"  (click)="find(pagenumber=pagenumber+1)">Proximo</button>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <a class="btn btn-success" href="newcountry" role="button">Novo</a>
+      </div> 
+    </div>    
+    
 </div>

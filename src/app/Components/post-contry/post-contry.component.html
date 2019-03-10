@@ -1,19 +1,25 @@
-<div id="postback" class="jumbotron container">
-    <div class="container">
-      <h1  class="display text-bold">Cadastro de Pais</h1>
-      <p class="lead">Interface destinada para o cadastro de pais.</p>
+<div class=" container">
+  <img src="https://www.grandchallenges.ca/wp-content/uploads/2016/01/countries.png" class="img-fluid" alt="Responsive image">
+</div>  
+  <div class=" display-inline text-light" d-inline>
+  <div  class=" container font-weight-bold text-dark bg-light" id="postback">
+      <div class="container">
+        <h1  class="display   text-bold">Cadastro de Pais</h1>
+        <hr class="my-4">
+      </div>
+  </div>
+  <div >
+    <div class=" container bg-transparent-light " id="postback">  
+      <form class="row justify-content-md-center " #pais="ngForm" (ngSubmit)="onSubmit(pais)">
+          <div class="form-group col-lg-4">
+            <label class="font-weight-bold text-dark">Nome</label>
+            <input  class="form-control" name="nome"  [(ngModel)] = "pais.nome" >
+          </div>
+          <div class=" row col-md-10 justify-content-md-center">
+                <button class=" btn btn-success btn-lg" type="onSubmit(pais)">Enviar</button>  
+          </div>
+      </form>
     </div>
   </div>
-<div >
-  <div id="postback" class="container">  
-    <form class="row justify-content-md-center" #country="ngForm" (ngSubmit)="onSubmit(country)">
-        <div class="form-group col col-lg-4">
-          <label class="font-weight-bold">Nome</label>
-          <input  class="form-control" name="nome"  ngModel >
-        </div>  
-    </form>
-    <div class="row justify-content-md-center">
-        <button class="btn btn-success btn-lg" type="onSubmit(country)">Submit</button>      
-    </div> 
-  </div>
 </div>
+<br/>
