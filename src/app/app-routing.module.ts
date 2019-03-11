@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './Components/Home-Component/home/home.component';
 import { AppComponent } from './app.component';
 import { GetCountryComponent } from './Components/get-country/get-country.component';
-import { PostContryComponent } from './Components/post-contry/post-contry.component';
+import { PostContryComponent } from './Components/post-country/post-contry.component';
 
 const routes: Routes =[
   {path: 'newcountry', component : PostContryComponent},

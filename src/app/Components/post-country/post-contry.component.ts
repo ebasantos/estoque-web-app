@@ -6,13 +6,12 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-post-contry',
-  templateUrl: './post-contry.component.html',
-  styleUrls: ['./post-contry.component.css']
+  templateUrl: './post-country.component.html',
+  styleUrls: ['./post-country.component.css']
 })
 export class PostContryComponent{
 
   constructor(private http: HttpClient, private s: CountryService){}
-    
 
   onSubmit(pais){
         this.s.save(pais.value);
