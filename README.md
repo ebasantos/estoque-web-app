@@ -9,11 +9,12 @@ Aplicação desenvolvida como projeto para a matéria de Analise e Projeto de Si
 
 ```
 
-### Equipe
 
-[Pedro Barbiero](https://github.com/pedrobarbiero)
+[Erik Santos](https://github.com/ebasantos)    ```FrontEnd```
 
-[Meyr Fernando](https://github.com/Fr4nT1c86)
+[Pedro Barbiero](https://github.com/pedrobarbiero)  ```BackEnd```
+
+[Meyr Fernando](https://github.com/Fr4nT1c86)    ```Tester/Auxilio no BackEnd - FrontEnd``` 
 
 ### Banco de dados
 
