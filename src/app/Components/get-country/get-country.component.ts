@@ -23,7 +23,6 @@ export class GetCountryComponent{
       this.page = page;
               console.log(this.page);
     });
-
     this.returnPage = this.page;
   }
 
@@ -43,7 +42,9 @@ export class GetCountryComponent{
     .subscribe(id => {
       this.id = id;
               console.log(this.page);
+              this.find()
             });
+   
   }
 
 }
